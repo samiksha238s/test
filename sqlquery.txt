@@ -1,0 +1,12 @@
+select * from test.dept;
+insert into test.dept(ID, name, total) values( 1, 'training', 10), (2, 'screening', 20), (3, 'engineering', 30);
+
+select * from test.emp;
+insert into test.emp(ID, name, salary, deptID) values ( 1000, 'kritika', 12345, 1);
+insert into test.emp( name, salary, deptID) values ( 'samiksha', 123456, 1), ( 'riyaz', 13454, 2), ('rashika', 243, 3);
+
+
+
+select emp.ID, dept.name, dept.total from emp right join dept on emp.deptID= dept.ID WHERE emp.ID=1001;
+
+select emp.ID, dept.name, dept.total from emp right join dept on emp.deptID= dept.ID WHERE emp.ID=1001;
